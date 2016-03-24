@@ -17,4 +17,12 @@
 		<module>chapter_9</module>
 		<module>chapter_10</module>
 	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.19</version>
+		</dependency>
+	</dependencies>
 </project>

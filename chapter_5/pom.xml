@@ -1,7 +1,13 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ru.parsentev</groupId>
-	<artifactId>java-a-from-z</artifactId>
+	<artifactId>chapter_5</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
+	<parent>
+		<groupId>ru.parsentev</groupId>
+		<artifactId>java-a-from-z</artifactId>
+		<version>1.0</version>
+	</parent>
+
 </project>
