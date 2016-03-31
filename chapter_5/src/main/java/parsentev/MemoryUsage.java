@@ -34,9 +34,9 @@ public class MemoryUsage {
 		User user = new User("test");
 		System.out.println(user);
 		user = null;
-//		System.gc();
+		System.gc();
 		System.out.println("finish");
-//		info();
+		info();
 
 	}
 
