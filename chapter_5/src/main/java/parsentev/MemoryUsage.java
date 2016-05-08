@@ -14,20 +14,6 @@ import java.lang.ref.WeakReference;
 public class MemoryUsage {
 	private static final Logger log = LoggerFactory.getLogger(MemoryUsage.class);
 
-	public static class User {
-		public String name;
-
-		public User(String name) {
-			this.name = name;
-		}
-
-		@Override
-		protected void finalize() throws Throwable {
-			super.finalize();
-			System.out.println("finalize");
-		}
-	}
-
 	public static void main(String[] args) {
 		System.out.println("start");
 		info();
