@@ -8,27 +8,26 @@ package parsentev;
 public class Substr {
 
 	public static void main(String[] args) {
-		System.out.println(new Substr().contain("aa aaa", "a a"));
+		System.out.println(new Substr().contain(" ", " "));
 	}
 
 	public boolean contain(String origin, String substr){
-		char[] originArray = origin.toCharArray();
-		char[] substrArray = substr.toCharArray();
-		int sizeValue = 0;
-		int indexS = 0;
-		for(int indexO = 0; indexO != originArray.length; indexO++){
-			if (originArray[indexO] != substrArray[indexS]){
-				indexS = 0;
-				sizeValue = 0;
-			} else{
-				indexS++;
-				sizeValue++;
+		char[] out = origin.toCharArray();
+		char[] sub = substr.toCharArray();
+		boolean result = true;
+		for(int i=0;i!=out.length;i++) {
+			result = true;
+			for(int j=0;j!=sub.length;j++) {
+				if (out[i+j] != sub[j]) {
+					result = false;
+					break;
+				}
 			}
-			if (sizeValue == substrArray.length){
+			if (result) {
 				break;
 			}
 		}
-		return sizeValue == substrArray.length;
+		return result;
 
 	}
 
